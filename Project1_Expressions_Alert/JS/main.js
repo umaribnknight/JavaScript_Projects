@@ -6,6 +6,10 @@ var y = "WORLD!<br>";
 var z = x + y;
 document.writeln(z);
 
+var blues = "I have the blues.";
+var blues = blues.fontcolor("blue");
+document.write(blues)
+
 document.write("Tony told Dad!\" <br> \"I got an A on my report card!\"<br>\"Good Job!\"Dad responded.");
 
 document.write("\"Life is like a box of chocolates,"
