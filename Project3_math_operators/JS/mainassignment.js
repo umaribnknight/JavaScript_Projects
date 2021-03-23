@@ -10,6 +10,13 @@ function modulus_Operator() {  //This function is for division with remainder
 
 function more_Math() {
     var simple_Math = (1+2) * 10 / 2 -5;
-    document.getElementById("More_Math").innerHTML = "1 plus 2, multiplied by 10, 
-    divided in half and then subtracted by 5 equals " + simple_math; 
+    document.getElementById("More_Math").innerHTML = "1 plus 2, multiplied by 10  divided in half and then subtracted by 5 equals " + simple_Math; 
 }
+
+var x = 5;
+x++;
+document.write(x);
+
+var x = 5.25;
+x--;
+document.write(x);
