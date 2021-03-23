@@ -17,6 +17,6 @@ var x = 5;
 x++;
 document.write(x);
 
-var x = 5.25;
-x--;
-document.write(x);
+var y = 5.25;
+y--;
+document.write(y);
