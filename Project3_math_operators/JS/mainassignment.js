@@ -20,3 +20,4 @@ document.write(x);
 var y = 5.25;
 y--;
 document.write(y);
+window.alert(Math.random() * 100);
