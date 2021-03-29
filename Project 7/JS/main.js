@@ -23,7 +23,7 @@ function Add_numbers_2() {
 Add_numbers_1();
 Add_numbers_2();
 
-function Time_function() {
+function Time_function() {                       //These are our time function
     var Time =new Date().getHours();
     var Reply;
     if(Time < 12 == Time > 0) {
@@ -42,7 +42,7 @@ function Add_numbers_1() {
     console.log(15 + x);
 }
 function Add_numbers_2() {
-    console.log(x + 100);
+    console.log(x + 10);          //This is where the error was corrected console.log
 }
 Add_numbers_1();
 Add_numbers_2();
