@@ -22,3 +22,27 @@ function Add_numbers_2() {
 }
 Add_numbers_1();
 Add_numbers_2();
+
+function Time_function() {
+    var Time =new Date().getHours();
+    var Reply;
+    if(Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time >= 12 == Time < 18) {
+        Reply = "it is afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
+function Add_numbers_1() {
+    var x = 10;
+    console.log(15 + x);
+}
+function Add_numbers_2() {
+    console.log(x + 100);
+}
+Add_numbers_1();
+Add_numbers_2();
