@@ -16,7 +16,7 @@ function for_Loop() {                                             //for loop
     }
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
-functon cat_pics() {                                                      //array
+function cat_pics() {                                                      //array
     var Cat_Picture = [];
     Cat_Picture[0] = "sleeping";
     Cat_Picture[1] = "playing";
@@ -27,9 +27,10 @@ functon cat_pics() {                                                      //arra
 }
 
 var x = 82;                         //let function
-document.write(x);
+document.getElementById("let_write").innerHTML = x;
+function let_write()
 {
-    var x = 33;
+    let x = 33;
     document.write("<br>" + x);
 }
 document.write("<br>" + x);
