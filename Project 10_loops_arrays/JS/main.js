@@ -28,7 +28,7 @@ function cat_pics() {                                                      //arr
 
 var x = 82;                         //let function
 document.getElementById("let_write").innerHTML = x;
-function let_write()
+document.write()
 {
     let x = 33;
     document.write("<br>" + x);
