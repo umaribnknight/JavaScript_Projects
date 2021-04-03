@@ -1,5 +1,5 @@
 //This variable keeps track of whose turn it is.
-let activePlayer = 'X' ;
+let activePlayer = 'x' ;
 //This array stores an array of moves. We use this to determine win conditions.
 let selectedSquares = [];
 
@@ -12,33 +12,33 @@ function placeXOrO(squareNumber) {
         //this variable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
         //this condition checks who's turn it is.
-        if(activePlayer === 'X')  {
+        if(activePlayer === 'x')  {
             //if active player is equal to 'X', the x.png is placed in HTML.
             select.style.backgroundImage = 'url("images/x.png")';
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
         } else {
             //If activePlayer is equal to'O', the o.png is placed in HTML.
-            select.style.backgroundImage = 'url)("images/o.png")';
+            select.style.backgroundImage = 'url("images/o.png")';
         }
         //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
         //This calls a function to check for any win conditions.
         checkWinConditions();
         //This condition is for changing the active player.
-        if (activeplayer === 'X')  {
+        if (activeplayer === 'x')  {
             //If active player is 'X' change it to 'O'.
-            activeplayer = 'O';
+            activeplayer = 'o';
             //If active player is anything other than 'X'.
         } else{
             //Change the activePlayer to 'X'.
-            activePlayer = 'X';
+            activePlayer = 'x';
         }
 
 
         //This function plays placement sound.
         audio('./media/place.mp3');
         //This condition checks to see if it is computers turn.
-        if(activePlayer === 'O') {
+        if(activePlayer === 'o') {
             //This function disables clicking for computer choice.
             disableClick();
             //This function waits 1 second before computernplaces image and enables click.
