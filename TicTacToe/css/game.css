@@ -11,7 +11,7 @@
 table {
     /* This property collapse table borders into 1 border. */
     border-collapse: collapse;
-    /* this hides outer borders on table. */
+    /* this hides outer borders on table... */
     border-style: hidden;
 }
 
