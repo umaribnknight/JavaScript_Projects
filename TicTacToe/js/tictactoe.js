@@ -150,19 +150,19 @@ function resetGame() {
 selectedSquares = [];
 }
 //This function utilizes html canvas to draw win lines.
-function drawWinLine(coordx1,coordy1, coordx2, coordy2 ) {
+function drawWinLine(coordX1, coordY1, coordX2, coordY2 ) {
     //This line accesses our html canvas element.
     const canvas = document.getElementById('win-lines')
     //This line gives us access to methods and properties to use on canvas.
     const c = canvas.getContext('2d');
     //This line indicates where the start of a lines x axis is.
-    let x1 = coordx1,
+    let x1 = coordX1,
 
-            y1 = coordy1,
+            y1 = coordY1,
 
-            x2 = coordx2,
+            x2 = coordX2,
 
-            y2 = coordy2,
+            y2 = coordY2,
 
             x = x1,
 
