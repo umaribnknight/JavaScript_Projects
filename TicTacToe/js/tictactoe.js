@@ -74,7 +74,7 @@ function placeXOrO(squareNumber) {
         // x 3, 4, 5 condition.
         else if (arrayIncludes('3x', '4x', '5x', )) {drawWinLine(50, 304, 558, 304) }
         // x 3, 4, 5 condition.
-        else if(arrayIncludes('6x', '7x', '8x')) { drawWinline(50, 508, 558, 508) }
+        else if(arrayIncludes('6x', '7x', '8x')) { drawWinLine(50, 508, 558, 508) }
         // x 0, 3, 6 condition.
         else if (arrayIncludes('0x', '3x', '6x')) { drawWinLine(100, 50, 100, 558) }
         // x 1, 4, 7 condition.
@@ -136,18 +136,6 @@ function audio(audioURL)  {
     let audio = new Audio(audioURL);
     //Play method plays our audio sound.
     audio.play();
-}
-  
-//This function resets the game in the event of a tie or win.
-function resetGame() {
-
-    for   (let i = 0; 1 < 9; i++)   {
-
-        let square = document.getElementById(String(i))
-
-        square.style.backgroundImage = ''
-    }
-selectedSquares = [];
 }
 //This function utilizes html canvas to draw win lines.
 function drawWinLine(coordX1, coordY1, coordX2, coordY2 ) {
@@ -222,6 +210,18 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2 ) {
 
     setTimeout(function () { clear(); resetGame(); }, 1000);
 }  
+//This function resets the game in the event of a tie or win.
+function resetGame() {
+     //This fo loop iterates through each HTML square element.
+    for   (let i = 0; i < 9; i++)   {
+        //This element gets the html element of i.
+        let square = document.getElementById(String(i))
+        //This removes our elements backround image.
+        square.style.backgroundImage = ''
+    }
+    //This restes our array so it is empty and we can start over.
+        selectedSquares = [];
+}
                     
                    
                     
