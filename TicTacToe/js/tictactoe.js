@@ -70,7 +70,7 @@ function placeXOrO(squareNumber) {
     //This function pauses the selectedSquares array to search for win conditions.
     function checkWinConditions()  {
         // x, 0, 1, 2 condition.
-        if    (arrayIncludes('ox', '1x', '2x',)) { drawWinLine(50, 100, 558, 100) }
+        if    (arrayIncludes('0x', '1x', '2x',)) { drawWinLine(50, 100, 558, 100) }
         // x 3, 4, 5 condition.
         else if (arrayIncludes('3x', '4x', '5x', )) {drawWinLine(50, 304, 558, 304) }
         // x 3, 4, 5 condition.
@@ -86,21 +86,21 @@ function placeXOrO(squareNumber) {
 
         else if (arrayIncludes('0x', '4x', '8x')) {drawWinLine(100, 508, 510, 90)  }
 
-        else if (arrayIncludes('00', '10', '50')) {drawWinLine(50, 100, 558, 100)  }
+        else if (arrayIncludes('0o', '1o', '5o')) {drawWinLine(50, 100, 558, 100)  }
 
-        else if (arrayIncludes('30', '40', '50')) {drawWinLine(50, 304, 558, 304)  }
+        else if (arrayIncludes('3o', '4o', '5o')) {drawWinLine(50, 304, 558, 304)  }
 
-        else if (arrayIncludes('60', '70', '80')) {drawWinLine(50, 508, 558, 508)  }
+        else if (arrayIncludes('6o', '7o', '8o')) {drawWinLine(50, 508, 558, 508)  }
         
-        else if (arrayIncludes('00', '30', '60')) {drawWinLine(100, 50, 100, 558) }
+        else if (arrayIncludes('9o', '3O', '6O')) {drawWinLine(100, 50, 100, 558) }
             
-        else if (arrayIncludes('10', '40', '70')) { drawWinLine(304, 50, 304, 558) }
+        else if (arrayIncludes('1o', '4o', '7o')) { drawWinLine(304, 50, 304, 558) }
 
-        else if (arrayIncludes('20', '50', '80')) { drawWinLine(508, 50, 508, 558) }
+        else if (arrayIncludes('2o', '5o', '8o')) { drawWinLine(508, 50, 508, 558) }
 
-        else if (arrayIncludes('60', '40', '20')) { drawWinLine(100, 508, 510, 90) }
+        else if (arrayIncludes('6o', '4o', '2o')) { drawWinLine(100, 508, 510, 90) }
 
-        else if (arrayIncludes('00', '40', '80')) { drawWinLine(100, 100, 520, 520) }
+        else if (arrayIncludes('0o', '4o', '8o')) { drawWinLine(100, 100, 520, 520) }
 
         else if (selectedSquares.length >= 9) {
 
@@ -188,7 +188,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2 ) {
 
         if (x1 <= x2 && y1 >= y2) {
             if (x < x2) { x += 10; }
-            if (x < x2) { x += 10; }
+            if (y < y2) { x-= 10; }
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }    
     }
