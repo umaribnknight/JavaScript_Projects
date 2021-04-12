@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Basic AJAX Demo</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css">     //CSS link 
     </head>
     <body>
         <div class="main">
-			<h2>Get The Latest Content:</h2>
+			<h2>Get The Latest Content:</h2>       //header
 			<div class='content' id="content">
 				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
 			</div>
 		<script type="text/javascript">
 		
-		var ajax = newXMLHttpRequest();
+		var ajax = new XMLHttpRequest();
 		
 		ajax.open('GET', 'content.html');
 		
